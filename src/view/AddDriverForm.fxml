@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="driverContext" prefHeight="429.0" prefWidth="639.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="51.0" layoutY="58.0" prefHeight="19.0" prefWidth="90.0" text="Driver Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDriverName" layoutX="246.0" layoutY="55.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: white;" />
+      <Label layoutX="51.0" layoutY="111.0" prefHeight="19.0" prefWidth="90.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNic" layoutX="246.0" layoutY="108.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: white;" />
+      <Label layoutX="51.0" layoutY="162.0" prefHeight="19.0" prefWidth="136.0" text="Drivers Licesence no.">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDriverLicense" layoutX="246.0" layoutY="159.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: white;" />
+      <Label layoutX="51.0" layoutY="215.0" prefHeight="19.0" prefWidth="136.0" text="Address">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="289.0" prefHeight="19.0" prefWidth="136.0" text="Contact">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddress" layoutX="246.0" layoutY="212.0" prefHeight="51.0" prefWidth="262.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="txtContact" layoutX="246.0" layoutY="286.0" prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: white;" />
+      <JFXButton layoutX="354.0" layoutY="361.0" onAction="#addDriverOnAction" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #26e039;" text="ADD DRIVER">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="490.0" layoutY="361.0" onAction="#backOnAction" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #132ce7;" text="Back" textFill="#1a1a1b">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="246.0" layoutY="14.0" text="Parking System" textFill="#1a0dcd">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="63.0" layoutY="38.0" prefHeight="3.0" prefWidth="491.0" />
+   </children>
+</AnchorPane>

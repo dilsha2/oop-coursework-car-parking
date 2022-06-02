@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="onDeliveryContext" prefHeight="429.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDeliveryTableFormController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="634.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/bg3.jpg.jpg" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="cmbOnDelivery" layoutX="48.0" layoutY="72.0" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: white;" />
+      <JFXButton layoutX="379.0" layoutY="72.0" onAction="#addVehicleOnAction" style="-fx-background-color: #f1c40f;" text=" ADD VEHICLE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="496.0" layoutY="72.0" onAction="#addDriverOnAction" style="-fx-background-color: #f1c40f;" text="ADD DRIVER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblOnDelivery" layoutX="25.0" layoutY="128.0" prefHeight="238.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="136.0" text="VEHICLE NUMBER" />
+          <TableColumn fx:id="colVehicleType" prefWidth="149.0" text="VEHICLE TYPE" />
+            <TableColumn fx:id="colDriverName" prefWidth="146.0" text="DRIVER NAME" />
+            <TableColumn fx:id="colLeftTime" prefWidth="135.0" text="LEFT TIME" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" text="Parking System" textFill="#1a0dcd">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-4.0" layoutY="38.0" prefHeight="3.0" prefWidth="626.0" />
+   </children>
+</AnchorPane>

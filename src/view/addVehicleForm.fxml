@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="vehicleContext" prefHeight="429.0" prefWidth="639.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="26.0" layoutY="84.0" prefHeight="17.0" prefWidth="95.0" text="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVehicleNumber" layoutX="160.0" layoutY="80.0" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: #ecf0f1;" />
+      <Label layoutX="26.0" layoutY="132.0" prefHeight="17.0" prefWidth="134.0" text="Maximum Weights">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtWeights" layoutX="160.0" layoutY="128.0" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: #ecf0f1;" />
+      <Label layoutX="26.0" layoutY="178.0" prefHeight="17.0" prefWidth="134.0" text="Number of Passengers">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPassengers" layoutX="160.0" layoutY="174.0" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: #ecf0f1;" />
+      <Label layoutX="381.0" layoutY="84.0" prefHeight="17.0" prefWidth="95.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbVehicleNumber" layoutX="483.0" layoutY="80.0" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #ecf0f1;" />
+      <JFXButton layoutX="381.0" layoutY="286.0" onAction="#addVehicleOnAction" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #2ecc71;" text="ADD VEHICLE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="503.0" layoutY="286.0" onAction="#backOnAction" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #2ecc71;" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="252.0" layoutY="14.0" text="Parking System" textFill="#1a0dcd">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="10.0" layoutY="48.0" prefHeight="3.0" prefWidth="626.0" />
+   </children>
+</AnchorPane>
